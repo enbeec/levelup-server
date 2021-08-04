@@ -3,7 +3,7 @@ from django.db import models
 GAMETYPE_LABEL_MAXLEN = 50
 
 
-class (models.Model):
+class GameType(models.Model):
     """GameType model
 
         Fields:

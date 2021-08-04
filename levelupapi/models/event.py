@@ -21,4 +21,4 @@ class Event(models.Model):
     description = models.TextField()
     title = models.CharField(max_length=EVENT_TITLE_MAXLEN)
     attendees = models.ManyToManyField(
-        "Gamer", through="EventGamer", relate_dname="attending")
+        "Gamer", through="EventGamer", related_name="attending")
